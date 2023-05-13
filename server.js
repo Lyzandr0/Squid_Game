@@ -6,7 +6,7 @@ server.use(express.static("public"));
 
 server.set("view engine", "html");
 
-nunjucks.configure("./", {
+nunjucks.configure("./view", {
   express: server,
   autoescape: true,
   noCache: true
